@@ -1,1 +1,2 @@
 Hello its file A
+Hello fileA.txt is being modified in Master.
