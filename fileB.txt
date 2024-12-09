@@ -1,3 +1,4 @@
 Hello it's fileB
  
 file B.txt being modified.
+line 4
