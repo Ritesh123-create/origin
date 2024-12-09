@@ -1,3 +1,4 @@
 Hello its file A
 3 way merging!!.
 Hello fileA.txt is being modified once again. 
+hello its checking jenkins
