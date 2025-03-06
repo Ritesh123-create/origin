@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-app
+  template:
+    metadata:
+      labels:
+        app: employee-app
+    spec:
+      containers:
+      - name: employee-app
+        image: devopsedu/employee
+        ports:
+        - containerPort: 8888
+        env:
+        - name: MONGO_DB_USERNAME
+          value: "root"
+        - name: MONGO_DB_PASSWORD
+          value: "mongo"
+        - name: MONGO_DB_HOST
+          value: "mongo-service"
+        - name: MONGO_DB_PORT
+          value: "27017"
